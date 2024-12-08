@@ -1,0 +1,32 @@
+¿Cómo funciona DNS?
+¿Cómo funciona DNS (Domain Name System)?
+
+El DNS (Domain Name System) es un sistema que traduce los nombres de dominio en direcciones IP.
+
+Es una parte esencial del funcionamiento de Internet, ya que facilita a los usuarios la navegación y la comunicación en la red.
+
+El DNS está compuesto por una red distribuida de servidores que almacenan registros de DNS. Estos registros contienen información sobre los nombres de dominio y sus correspondientes direcciones IP.
+
+Cuando tu dispositivo realiza una consulta DNS, busca en estos servidores la dirección IP asociada al nombre de dominio que deseas visitar.
+
+
+¿Cómo funciona una resolución DNS?
+
+Una resolución DNS consiste en traducir un nombre de dominio en su dirección IP correspondiente. El funcionamiento es el siguiente:
+
+Solicitud del usuario: El usuario introduce un nombre de dominio, como http://example.com. Este es el punto de partida, donde el usuario busca acceder a un sitio web por su nombre.
+
+Transmisión DNS Resolver: El DNS Resolver actúa como intermediario entre el usuario y los servidores DNS. Si ya tiene la dirección IP en caché, la proporciona directamente; de lo contrario, inicia el proceso de consulta a los servidores DNS.
+
+Consulta a los servidores DNS Raíz: Si la dirección IP no está en la caché del DNS Resolver, este consulta a los servidores DNS raíz. Estos servidores son los encargados de dirigir las consultas a los servidores de nombres de dominio de nivel superior (TLD) correspondientes.
+
+Consulta a los servidores TLD: Los servidores TLD, que corresponden a extensiones como .com, .org, .net, etc., se consultan para obtener la dirección del servidor de nombres autoritativo del dominio específico.
+
+Consulta a los servidores de nombres de dominio autoritativos: Estos servidores son los que tienen la información final sobre la dirección IP asociada al nombre de dominio solicitado.
+
+Respuesta al usuario: El DNS Resolver envía la dirección IP obtenida del servidor de nombres autoritativo al navegador del usuario, permitiendo que este establezca una conexión con el servidor web del nombre de dominio ingresado utilizando su dirección IP.
+
+Conexión al servidor web: Se realiza la conexión real entre el navegador del usuario y el servidor web, utilizando la dirección IP obtenida.
+
+Respuesta del servidor web al cliente: Finalmente, el servidor web responde a la solicitud del cliente, usualmente enviando la información necesaria para cargar el sitio web en el navegador del usuario.
+
